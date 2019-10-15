@@ -15,16 +15,16 @@
 
         <!-- Navigatie -->
         <nav class="navbar">
-            <ul class="navlinks">
-                <li class="logo"><a href="index.html" class="logotekst">Foodtruck Booking<i class="fas fa-truck"></i></a></li>
-                <li class="navitems"><a href="" class="navtekst">Verhuur een Foodtruck</a></li>
-                <li class="navitems"><a href="" class="navtekst">Registreren</a></li>
-                <li class="navitems"><button id="inlogknop">Inloggen</button></li>
+            <ul>
+                <li><a href="index.html" class="logotekst">Foodtruck Booking<i class="fas fa-truck"></i></a></li>
+                <li><a href="" class="navtekst">Verhuur een Foodtruck</a></li>
+                <li><a href="" class="navtekst">Registreren</a></li>
+                <li><button id="inlogknop">Inloggen</button></li>
             </ul>
         </nav>
         <form action="#">
             <fieldset>
-               <legend>Inloggen</legend>
+                <legend>Inloggen</legend>
                 <label for="username">Gebruikersnaam</label>
                 <input type="text" id="username" name="username" required placeholder="Gebruikersnaam">
                 <label for="password">Wachtwoord</label>
@@ -37,6 +37,25 @@
     </header>
 
     <main>
+       <section class="filtersection">
+        <button id="filterknop">Filter opties</button>
+        <div>
+            <fieldset>
+                <legend>Filter opties</legend>
+                <ul>
+                    <li><input type="checkbox" id="italiaans" name="italiaans" checked>
+                        <label for="italiaans">Italiaans</label></li>
+                    <li><input type="checkbox" id="koffie" name="koffie" checked>
+                        <label for="koffie">Koffie</label></li>
+                    <li><input type="checkbox" id="fruit" name="fruit" checked>
+                        <label for="fruit">Fruit</label></li>
+                    <li><input type="checkbox" id="ijs" name="ijs" checked>
+                        <label for="ijs">Ijs</label></li>
+                </ul>
+            </fieldset>
+        </div>
+        </section>
+
         <!--   Populaire foodtrucks    -->
         <h3>Populaire foodtrucks</h3>
         <section class="resultaten">
@@ -137,7 +156,7 @@
         <p class="footertekst"> Dit is een footer!</p>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
