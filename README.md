@@ -1,6 +1,12 @@
 # Front-end-2
 
+link maken van article https://stackoverflow.com/questions/38367002/make-entire-article-tag-a-link
 
+grid https://css-tricks.com/snippets/css/complete-guide-grid/
+
+flex https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+--------------------------------------------------------------------------
 
 
 Photo by Simon Rae on Unsplash
