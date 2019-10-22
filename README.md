@@ -6,6 +6,8 @@ grid https://css-tricks.com/snippets/css/complete-guide-grid/
 
 flex https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
+checkboxes stylen https://stackoverflow.com/questions/7642277/css-styled-a-checkbox-to-look-like-a-button-is-there-a-hover
+
 --------------------------------------------------------------------------
 
 
