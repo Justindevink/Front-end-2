@@ -8,6 +8,8 @@ flex https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 checkboxes stylen https://stackoverflow.com/questions/7642277/css-styled-a-checkbox-to-look-like-a-button-is-there-a-hover
 
+Inlog- en filterscherm puntje https://codepen.io/Val_Ery/pen/BQQvmG
+
 --------------------------------------------------------------------------
 
 
