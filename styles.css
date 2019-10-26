@@ -1,3 +1,4 @@
+/* Algemeen */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +9,11 @@
     border: 1px solid dodgerblue;
 }
 
+button {
+    cursor: pointer;
+}
+
+/* Navigatie */
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +33,7 @@ nav ul:focus {
     border: 3px solid red;
 }
 
+/* Animatie navigatie*/
 @keyframes fadeinnav {
     from {
         opacity: 0;
@@ -39,12 +46,13 @@ nav ul:focus {
     }
 }
 
-.navbar {
+nav {
     padding-top: 0.8em;
     padding-left: 1em;
     padding-bottom: 1.2em;
 }
 
+/* Navigatie detailpagina */
 .navbardetail {
     padding-top: 0.8em;
     padding-left: 1em;
@@ -57,7 +65,7 @@ a {
     text-decoration: none;
 }
 
-.navtekst:hover {
+nav ul li a:hover {
     color: gray;
 }
 
@@ -67,21 +75,17 @@ nav a {
     font-family: 'Dosis', sans-serif;
 }
 
-.logotekst:hover {
+nav ul li:first-child:hover {
     color: darkgray;
 }
 
-.logotekst {
+nav ul li:first-child {
     font-size: 1.2em;
     color: white;
     font-family: 'Raleway', serif;
 }
 
-
-i {
-    padding-left: 0.5em;
-}
-
+/*Inlog knop*/
 #inlogknop {
     padding: 1em;
     margin-right: 2em;
@@ -123,28 +127,23 @@ i {
         margin-left: 1em;
     }
 
-    form {
+    .login {
         right: 1.8em;
-
     }
 
-    /* https://codepen.io/Val_Ery/pen/BQQvmG */
-    form:before {
+    /* Inlogscherm puntje */
+    .login:before {
         top: -7px;
         left: 88%;
     }
 
-    form:after {
+    .login:after {
         top: -6px;
         left: calc(88% + 1px);
     }
-
-    /* einde https://codepen.io/Val_Ery/pen/BQQvmG */
-
 }
 
 /* Header */
-
 header {
     background-image: url(images/header.jpg);
     background-position: center;
@@ -159,7 +158,8 @@ header {
     height: 60vh;
 }
 
-form {
+/* Inlogscherm */
+.login {
     position: absolute;
     width: 22.5rem;
     height: 19rem;
@@ -173,8 +173,8 @@ form {
     z-index: 1;
 }
 
-/* https://codepen.io/Val_Ery/pen/BQQvmG */
-form:before {
+/* Inlogscherm puntje */
+.login:before {
     content: "";
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
@@ -184,7 +184,7 @@ form:before {
     right: 80%;
 }
 
-form:after {
+.login:after {
     content: "";
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
@@ -194,9 +194,8 @@ form:after {
     right: calc(80% + 1px);
 }
 
-/* einde https://codepen.io/Val_Ery/pen/BQQvmG */
-
-form.laatzien {
+/* Inlog en filterscherm toggle */
+body form:nth-of-type(1).laatzien {
     visibility: visible;
     opacity: 1;
 }
@@ -214,7 +213,7 @@ legend {
     padding-left: 1.3em;
 }
 
-form label {
+.login label {
     display: block;
     font-family: 'Raleway', serif;
     margin-top: 1em;
@@ -223,7 +222,7 @@ form label {
     color: black;
 }
 
-form input {
+.login input {
     display: block;
     font-family: 'Dosis', sans-serif;
     margin-top: 0.5em;
@@ -237,7 +236,7 @@ form input {
     border-radius: 3px;
 }
 
-input[type=submit] {
+.login input[type=submit] {
     background-color: cadetblue;
     color: white;
     font-weight: bold;
@@ -247,10 +246,11 @@ input[type=submit] {
     transition: 0.4s;
 }
 
-input[type=submit]:hover {
+.login input[type=submit]:hover {
     background-color: lightblue;
 }
 
+/* Titel */
 h1 {
     display: none;
     transition: 0.5s;
@@ -271,6 +271,7 @@ h2 {
     animation: fadeinh2 2s;
 }
 
+/* Animatie titel */
 @keyframes fadeinh1 {
     from {
         opacity: 0;
@@ -297,15 +298,6 @@ h2 {
 
 /* Header desktop */
 @media all and (min-width: 600px) {
-    header {
-        height: 100vh;
-    }
-
-    .detailheader {
-        height: 100vh;
-    }
-
-
     h1 {
         display: block;
         font-size: 4em;
@@ -313,7 +305,7 @@ h2 {
         text-align: center;
         color: white;
         font-family: 'Raleway', sans-serif;
-        padding-top: 3em;
+        padding-top: 1.5em;
     }
 
     h2 {
@@ -325,33 +317,36 @@ h2 {
 }
 
 /* Main */
-
 main {
     background-color: #fcfcfc;
     padding-bottom: 10em;
 }
 
+/* filterknop en sectie*/
 #filterknop {
     padding: 1em;
-    margin-top: 2em;
+    margin-top: 5em;
     margin-left: 3em;
-    background-color: orange;
-    color: white;
+    background-color: #fcfcfc;
+    color: dodgerblue;
     border: none;
     font-size: 0.8em;
     border-radius: 2px;
+    border: 1px solid dodgerblue;
     transition: 0.4s;
 }
 
 #filterknop:hover {
-    background-color: coral;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    color: white;
 }
 
-div {
+.filter {
     position: absolute;
-    width: 22.5rem;
-    height: 17rem;
-    margin-top: 1em;
+    width: 18rem;
+    height: 13rem;
+    margin-top: 1.4em;
     background-color: white;
     margin-left: 0.25em;
     border-radius: 4px;
@@ -361,13 +356,8 @@ div {
     transition: 0.2s;
 }
 
-div.filterlaatzien {
-    visibility: visible;
-    opacity: 1;
-}
-
-/* https://codepen.io/Val_Ery/pen/BQQvmG */
-div:before {
+/* Filterscherm puntje */
+.filter:before {
     content: "";
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
@@ -377,7 +367,7 @@ div:before {
     right: 76%;
 }
 
-div:after {
+.filter:after {
     content: "";
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
@@ -387,34 +377,58 @@ div:after {
     right: calc(76% + 1px);
 }
 
-/* einde https://codepen.io/Val_Ery/pen/BQQvmG */
-
-div ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-direction: column;
-    list-style: none;
+.filter section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-column-gap: 0.8em;
+    grid-row-gap: 0.8em;
+    width: 5em;
+    margin-top: 0.6em;
+    margin-left: 4.9em;
 }
 
-div ul li {
-    padding-top: 1em;
-    margin-left: 2em;
+.filter input[type=checkbox] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
 }
 
-div ul:focus {
-    border: 3px solid red;
+
+.filter div {
+    width: 5em;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid skyblue;
+    text-align: center;
 }
 
-li label {
-    margin-left: 0.8em;
+.filter div:hover {
+    border: 1px solid skyblue;
+}
+
+.filter span {
     font-family: 'Raleway', serif;
+    color: dodgerblue;
+    font-size: 0.8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: block;
+    transition: 0.4s;
+
 }
 
-li input {
-    padding: 0.5em;
+.filter input:hover + span {
+    background-color: skyblue;
+    color: #fff;
 }
 
+.filter input:checked + span {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+/* Titel resultaten */
 h3 {
     padding-top: 1em;
     padding-bottom: 1.2em;
@@ -423,7 +437,8 @@ h3 {
     font-family: 'Raleway', sans-serif;
 }
 
-.resultaten {
+/*Sectie resultaten*/
+.resulaten {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
     justify-content: space-around;
@@ -434,8 +449,8 @@ h3 {
     padding-bottom: 8em;
 }
 
-/* https://stackoverflow.com/questions/38367002/make-entire-article-tag-a-link */
-.block {
+/* Thumbnail link */
+article a {
     display: block;
     width: 100%;
     height: 100%;
@@ -443,7 +458,8 @@ h3 {
     left: 0;
 }
 
-.thumbnail {
+/* Thumbnail */
+article {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -458,24 +474,19 @@ h3 {
     transition: 0.3s;
 }
 
-.thumbnail:hover {
+article:hover {
     box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.2);
     transform: translateY(-3%);
 }
 
-.thumbnail:focus {
-    border: 5px static yellow;
-}
-
-
-.thumbnailimg {
+article img {
     width: 19em;
     margin: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-article a h4 {
+article h4 {
     margin-top: 0.8em;
     margin-left: 0.8em;
     font-family: 'Raleway', sans-serif;
@@ -485,7 +496,7 @@ article a h4 {
     color: black;
 }
 
-.thumbnailsubtekst {
+article p {
     width: 25em;
     font-family: 'Raleway', sans-serif;
     color: dimgray;
@@ -496,7 +507,7 @@ article a h4 {
     max-width: 17em;
 }
 
-/* main desktop */
+/* Main desktop */
 @media all and (min-width: 600px) {
     h3 {
         padding-top: 0.1em;
@@ -504,42 +515,41 @@ article a h4 {
         font-size: 2em;
     }
 
+
     .resultaten {
         grid-row-gap: 3em;
     }
+
 }
 
 @media all and (min-width: 910px) {
-    .filtersection {
+    .filtersectie {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        /*        min-width: 10em;*/
     }
+
 
     #filterknop {
         margin-right: 15em;
     }
 
-    div {
-        margin-top: 5.3em;
+    .filter {
+        margin-top: 8em;
         right: 12.5em;
     }
 
-    /* https://codepen.io/Val_Ery/pen/BQQvmG */
-    div:before {
+    /* Filterscherm puntje */
+    .filter:before {
         left: 87%;
     }
 
-    div:after {
+    .filter:after {
         left: calc(87% + 1px);
     }
-
-    /* einde https://codepen.io/Val_Ery/pen/BQQvmG */
 }
 
 /* Detailpagina */
-
 .detailtitel {
     padding-top: 3em;
     padding-bottom: 1.5em;
@@ -548,7 +558,7 @@ article a h4 {
     font-family: 'Raleway', sans-serif;
 }
 
-
+/* Tekst vlak detailpagina*/
 .detailtekst {
     display: flex;
     flex-direction: row;
@@ -560,7 +570,7 @@ article a h4 {
     background-color: #fcfcfc;
 }
 
-.overons {
+.detailtekst h4 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
 }
@@ -571,18 +581,23 @@ article a h4 {
     font-size: 1.2em;
 }
 
-.biotekst {
+.detailtekst p {
     font-family: 'Raleway', sans-serif;
     margin-top: 1em;
     max-width: 45em;
 }
 
-.infoknop {
+.detailtekst p:nth-child(4) {
+    padding-bottom: 3em;
+}
+
+/* Info vlak detailpagina */
+.info {
     display: flex;
     flex-direction: column;
 }
 
-.info {
+.info ul {
     height: 20em;
     padding-top: 2em;
     padding-bottom: 5em;
@@ -594,14 +609,15 @@ article a h4 {
     background-color: gainsboro;
 }
 
-.infotekst {
+.info ul li {
     margin-bottom: 1em;
     font-family: 'Raleway', sans-serif;
     color: dimgray;
     max-width: 15em;
 }
 
-.reserveerknop {
+/* Reserveer knop */
+.info button {
     margin-top: 1em;
     background-color: firebrick;
     color: white;
@@ -616,7 +632,7 @@ article a h4 {
     transition: 0.4s;
 }
 
-.reserveerknop:hover {
+.info button:hover {
     background-color: indianred;
 }
 
@@ -638,7 +654,7 @@ footer {
     padding-right: 1em;
 }
 
-.footertekst {
+footer p {
     color: white;
     font-family: sans-serif;
 }

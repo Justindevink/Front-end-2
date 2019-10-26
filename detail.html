@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Foodtruck Booking</title>
-
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald%7CRaleway&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/b0d26bf53a.js"></script>
 </head>
 
 <body>
     <header class="headerdetail">
 
         <!-- Navigatie -->
-              <nav class="navbardetail">
-            <ul class="navlinks">
-                <li class="logo"><a href="index.html" class="logotekst">Foodtruck Booking<i class="fas fa-truck"></i></a></li>
-                <li class="navitems"><a href="" class="navtekst">Verhuur een Foodtruck</a></li>
-                <li class="navitems"><a href="" class="navtekst">Registreren</a></li>
-                <li class="navitems"><button id="inlogknop">Inloggen</button></li>
+        <nav class="navbardetail">
+            <ul>
+                <li><a href="index.html">Foodtruck Booking</a></li>
+                <li><a href="">Verhuur een Foodtruck</a></li>
+                <li><a href="">Registreren</a></li>
+                <li><button id="inlogknop">Inloggen</button></li>
             </ul>
         </nav>
-        <form action="#">
+
+        <!-- Inlogscherm -->
+        <form class="login" action="#">
             <fieldset>
-               <legend>Inloggen</legend>
+                <legend>Inloggen</legend>
                 <label for="username">Gebruikersnaam</label>
                 <input type="text" id="username" name="username" required placeholder="Gebruikersnaam">
                 <label for="password">Wachtwoord</label>
@@ -37,41 +36,45 @@
     </header>
 
     <main>
-        <!--   Populaire foodtrucks    -->
+        <!--  Titel -->
         <h3 class="detailtitel">American Icecream</h3>
-        <section class="detailtekst">
-            <article class="biodiv">
-                <h4 class="overons">Over ons</h4>
-                <p class="biotekst">American Icecream is begonnen in 2016 in Haarlem, sinds die tijd trekken we het hele land door om overal onze verse, zelfgemaakte ijs aan zoveel mogelijk mensen te laten proefen.</p>
-                <p class="biotekst">Onze specialiteit is Italiaans schepijs, maar ook softijst, Wafels, Chocolate Chip Cookies en Milkshakes kunnen we maken als de beste! Dat allemaal met ons eigen gemaakte slagroom.</p>
-                <p class="biotekst">We staan vooral op Food Festivals maar staan altijd open voor verjaardagen, werkuitjes, trouwerijen en muziekfestivals. Stuur ons gerust een berichtje voor vragen of meer informatie en natuurlijk is bellen ook altijd mogelijk!</p>
 
-                <h4 class="contact">Contactgegevens</h4>
-                <p class="biotekst">American Icecream</p>
-                <p class="biotekst">Theolindenstraat 85</p>
-                <p class="biotekst">06 23 29 54 71</p>
-                <p class="biotekst">americanicecreamtruck@info.nl</p>
-            </article>
-            <section class="infoknop">
-                <article class="info">
-                   <ul></ul>
-                    <p class="infotekst">Categorie: <i>Ijs, wafels</i></p>
-                    <p class="infotekst">Evenementen: <i>Food festivals, verjaardagen, trouwerijen</i></p>
-                    <p class="infotekst">Prijsklasse: <i>€80 per uur</i></p>
-                    <p class="infotekst">Allergieën: <i>Zuivel</i></p>
-                    <p class="infotekst">Aantal medewerkers: <i>2</i></p>
-                    <p class="infotekst">Kenmerken: <i>Biologisch, Vegetarisch</i></p>
-                </article>
-                <button class="reserveerknop">Reserveer</button>
+        <!-- Tekst vlak -->
+        <section class="detailtekst">
+            <section>
+                <h4>Over ons</h4>
+                <p>American Icecream is begonnen in 2016 in Haarlem, sinds die tijd trekken we het hele land door om overal onze verse, zelfgemaakte ijs aan zoveel mogelijk mensen te laten proefen.</p>
+                <p>Onze specialiteit is Italiaans schepijs, maar ook softijst, Wafels, Chocolate Chip Cookies en Milkshakes kunnen we maken als de beste! Dat allemaal met ons eigen gemaakte slagroom.</p>
+                <p>We staan vooral op Food Festivals maar staan altijd open voor verjaardagen, werkuitjes, trouwerijen en muziekfestivals. Stuur ons gerust een berichtje voor vragen of meer informatie en natuurlijk is bellen ook altijd mogelijk!</p>
+
+                <h4>Contactgegevens</h4>
+                <p>American Icecream</p>
+                <p>Theolindenstraat 85</p>
+                <p>06 23 29 54 71</p>
+                <p>americanicecreamtruck@info.nl</p>
+            </section>
+
+            <!-- Info vlak -->
+            <section class="info">
+                <ul>
+                    <li>Categorie: <i>Ijs, wafels</i></li>
+                    <li>Evenementen: <i>Food festivals, verjaardagen, trouwerijen</i></li>
+                    <li>Prijsklasse: <i>€80 per uur</i></li>
+                    <li>Allergieën: <i>Zuivel</i></li>
+                    <li>Aantal medewerkers: <i>2</i></li>
+                    <li>Kenmerken: <i>Biologisch, Vegetarisch</i></li>
+                </ul>
+                <button>Reserveer</button>
             </section>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p class="footertekst"> Dit is een footer!</p>
+        <p>Foodtruck Booking BV</p>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

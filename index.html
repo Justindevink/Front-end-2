@@ -7,22 +7,23 @@
     <title>Foodtruck Booking</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald%7CRaleway&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b0d26bf53a.js"></script>
 </head>
 
 <body>
     <header>
 
         <!-- Navigatie -->
-        <nav class="navbar">
+        <nav>
             <ul>
-                <li><a href="index.html" class="logotekst">Foodtruck Booking<i class="fas fa-truck"></i></a></li>
-                <li><a href="" class="navtekst">Verhuur een Foodtruck</a></li>
-                <li><a href="" class="navtekst">Registreren</a></li>
+                <li><a href="index.html">Foodtruck Booking</a></li>
+                <li><a href="">Verhuur een Foodtruck</a></li>
+                <li><a href="">Registreren</a></li>
                 <li><button id="inlogknop">Inloggen</button></li>
             </ul>
         </nav>
-        <form action="#">
+
+        <!-- Loginscherm -->
+        <form class="login" action="#">
             <fieldset>
                 <legend>Inloggen</legend>
                 <label for="username">Gebruikersnaam</label>
@@ -32,128 +33,148 @@
                 <input type="submit" value="Login">
             </fieldset>
         </form>
+
+        <!-- Titel -->
         <h1>Foodtruck Booking</h1>
         <h2>Boek nu een Foodtruck bij jou in de buurt.</h2>
     </header>
-
     <main>
-       <section class="filtersection">
-        <button id="filterknop">Filter opties</button>
-        <div>
-            <fieldset>
-                <legend>Filter opties</legend>
-                <ul>
-                    <li><input type="checkbox" id="italiaans" name="italiaans" checked>
-                        <label for="italiaans">Italiaans</label></li>
-                    <li><input type="checkbox" id="koffie" name="koffie" checked>
-                        <label for="koffie">Koffie</label></li>
-                    <li><input type="checkbox" id="fruit" name="fruit" checked>
-                        <label for="fruit">Fruit</label></li>
-                    <li><input type="checkbox" id="ijs" name="ijs" checked>
-                        <label for="ijs">Ijs</label></li>
-                </ul>
-            </fieldset>
+
+        <!-- filterknop en sectie -->
+        <div class="filtersectie">
+            <button id="filterknop">Filter opties</button>
+            <form class="filter">
+                <fieldset>
+                    <legend>Filter opties</legend>
+                    <section>
+                        <div>
+                            <label for="broodjes">
+                                <input type="checkbox" id="broodjes" name="broodjes" checked>
+                                <span>Broodjes</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="koffie">
+                                <input type="checkbox" id="koffie" name="koffie" checked>
+                                <span>Koffie</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="fruit">
+                                <input type="checkbox" id="fruit" name="fruit" checked>
+                                <span>Fruit</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="ijs">
+                                <input type="checkbox" id="ijs" name="ijs" checked>
+                                <span>Ijs</span>
+                            </label>
+                        </div>
+                    </section>
+                </fieldset>
+            </form>
         </div>
-        </section>
 
-        <!--   Populaire foodtrucks    -->
+        <!-- Populaire foodtrucks -->
         <h3>Populaire foodtrucks</h3>
-        <section class="resultaten">
-            <article class="thumbnail">
-                <a class="block" href="detail.html">
-                    <img src="images/truck1.jpg" alt="thumbnail foodtruck" class="thumbnailimg">
+        <section class="resulaten">
+            <article>
+                <a href="detail.html">
+                    <img src="images/truck1.jpg" alt="thumbnail foodtruck">
                     <h4>American Icecream</h4>
-                    <p class="thumbnailsubtekst">Ijsjes, wafels</p>
+                    <p>Ijsjes, wafels</p>
                 </a>
             </article>
-            <article class="thumbnail">
-                <a class="block" href="detail.html">
-                    <img src="images/truck2.jpg" alt="thumbnail foodtruck" class="thumbnailimg">
+            <article>
+                <a href="detail.html">
+                    <img src="images/truck2.jpg" alt="thumbnail foodtruck">
                     <h4>Real Hotdog</h4>
-                    <p class="thumbnailsubtekst">Amerikaans, broodjes</p>
+                    <p>Amerikaans, broodjes</p>
                 </a>
             </article>
-            <article class="thumbnail">
-                <a class="block" href="detail.html">
-                    <img src="images/truck3.jpg" alt="thumbnail foodtruck" class="thumbnailimg">
+            <article>
+                <a href="detail.html">
+                    <img src="images/truck3.jpg" alt="thumbnail foodtruck">
                     <h4>Pizza Antonio</h4>
-                    <p class="thumbnailsubtekst">Italiaans, pizza</p>
+                    <p>Italiaans, pizza</p>
                 </a>
             </article>
-            <article class="thumbnail">
-                <a class="block" href="detail.html">
-                    <img src="images/truck4.jpg" alt="thumbnail foodtruck" class="thumbnailimg">
+            <article>
+                <a href="detail.html">
+                    <img src="images/truck4.jpg" alt="thumbnail foodtruck">
                     <h4>Fruity Fresh</h4>
-                    <p class="thumbnailsubtekst">Smooties, fruit</p>
+                    <p>Smooties, fruit</p>
                 </a>
             </article>
-            <article class="thumbnail">
-                <a class="block" href="detail.html">
-                    <img src="images/truck5.jpg" alt="thumbnail foodtruck" class="thumbnailimg">
+            <article>
+                <a href="detail.html">
+                    <img src="images/truck5.jpg" alt="thumbnail foodtruck">
                     <h4>City Wok</h4>
-                    <p class="thumbnailsubtekst">Aziatisch, wok, sushi</p>
+                    <p>Aziatisch, wok, sushi</p>
                 </a>
             </article>
         </section>
 
-        <!--   Aangerade foodtrucks    -->
+        <!-- Aangerade foodtrucks -->
         <h3>Aangeraden foodtrucks</h3>
-        <section class="resultaten">
-            <article class="thumbnail">
-                <a class="block" href="detail.html">
-                    <img src="images/truck1.jpg" alt="thumbnail foodtruck" class="thumbnailimg">
+        <section class="resulaten">
+            <article>
+                <a href="detail.html">
+                    <img src="images/truck1.jpg" alt="thumbnail foodtruck">
                     <h4>American Icecream</h4>
-                    <p class="thumbnailsubtekst">Ijsjes, wafels</p>
+                    <p>Ijsjes, wafels</p>
                 </a>
             </article>
-            <article class="thumbnail">
-                <a class="block" href="detail.html">
-                    <img src="images/truck2.jpg" alt="thumbnail foodtruck" class="thumbnailimg">
+            <article>
+                <a href="detail.html">
+                    <img src="images/truck2.jpg" alt="thumbnail foodtruck">
                     <h4>Real Hotdog</h4>
-                    <p class="thumbnailsubtekst">Amerikaans, broodjes</p>
+                    <p>Amerikaans, broodjes</p>
                 </a>
             </article>
-            <article class="thumbnail">
-                <a class="block" href="detail.html">
-                    <img src="images/truck3.jpg" alt="thumbnail foodtruck" class="thumbnailimg">
+            <article>
+                <a href="detail.html">
+                    <img src="images/truck3.jpg" alt="thumbnail foodtruck">
                     <h4>Pizza Antonio</h4>
-                    <p class="thumbnailsubtekst">Italiaans, pizza</p>
+                    <p>Italiaans, pizza</p>
                 </a>
             </article>
-            <article class="thumbnail">
-                <a class="block" href="detail.html">
-                    <img src="images/truck4.jpg" alt="thumbnail foodtruck" class="thumbnailimg">
+            <article>
+                <a href="detail.html">
+                    <img src="images/truck4.jpg" alt="thumbnail foodtruck">
                     <h4>Fruity Fresh</h4>
-                    <p class="thumbnailsubtekst">Smooties, fruit</p>
+                    <p>Smooties, fruit</p>
                 </a>
             </article>
-            <article class="thumbnail">
-                <a class="block" href="detail.html">
-                    <img src="images/truck5.jpg" alt="thumbnail foodtruck" class="thumbnailimg">
+            <article>
+                <a href="detail.html">
+                    <img src="images/truck5.jpg" alt="thumbnail foodtruck">
                     <h4>City Wok</h4>
-                    <p class="thumbnailsubtekst">Aziatisch, wok, sushi</p>
+                    <p>Aziatisch, wok, sushi</p>
                 </a>
             </article>
-            <article class="thumbnail">
-                <a class="block" href="detail.html">
-                    <img src="images/truck1.jpg" alt="thumbnail foodtruck" class="thumbnailimg">
+            <article>
+                <a href="detail.html">
+                    <img src="images/truck1.jpg" alt="thumbnail foodtruck">
                     <h4>American Icecream</h4>
-                    <p class="thumbnailsubtekst">Ijsjes, wafels</p>
+                    <p>Ijsjes, wafels</p>
                 </a>
             </article>
-            <article class="thumbnail">
-                <a class="block" href="detail.html">
-                    <img src="images/truck2.jpg" alt="thumbnail foodtruck" class="thumbnailimg">
+            <article>
+                <a href="detail.html">
+                    <img src="images/truck2.jpg" alt="thumbnail foodtruck">
                     <h4>Real Hotdog</h4>
-                    <p class="thumbnailsubtekst">Amerikaans, broodjes</p>
+                    <p>Amerikaans, broodjes</p>
                 </a>
             </article>
 
         </section>
     </main>
 
+    <!-- footer -->
     <footer>
-        <p class="footertekst"> Dit is een footer!</p>
+        <p>Foodtruckbooking BV</p>
     </footer>
 
     <script src="script.js"></script>
